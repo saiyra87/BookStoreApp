@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gui.CustomerCostController">
+
+    <!-- Top: Total Cost Message -->
+    <Label fx:id="totalCostLabel" text="Total Cost: 0.0" style="-fx-font-size: 14px;"/>
+
+    <!-- Middle: Points and Status Message -->
+    <Label fx:id="pointsStatusLabel" text="Points: 0, Status: Silver" style="-fx-font-size: 14px;"/>
+
+    <!-- Bottom: Logout Button -->
+    <Button text="Logout" onAction="#handleLogout"/>
+</VBox>

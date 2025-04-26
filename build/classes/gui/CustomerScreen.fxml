@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="10" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gui.CustomerController">
+
+    <!-- Top: Welcome Message -->
+    <Label fx:id="welcomeLabel" text="Welcome Jane. You have 0 points. Your status is Silver" style="-fx-font-size: 14px;"/>
+
+    <!-- Middle: Books Table -->
+    <TableView fx:id="bookTable" prefHeight="250" prefWidth="400">
+        <columns>
+            <TableColumn text="Book Name" fx:id="bookNameColumn" prefWidth="180"/>
+            <TableColumn text="Book Price" fx:id="bookPriceColumn" prefWidth="100"/>
+            <TableColumn text="Select" fx:id="selectColumn" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <!-- Bottom: Action Buttons -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Buy" onAction="#handleBuy"/>
+        <Button text="Redeem points and Buy" onAction="#handleRedeemAndBuy"/>
+        <Button text="Logout" onAction="#handleLogout"/>
+    </HBox>
+</VBox>

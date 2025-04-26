@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="10" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="gui.OwnerBooksController">
+
+  
+    <TableView fx:id="booksTable" prefHeight="300">
+        <columns>
+            <TableColumn text="Book Name" fx:id="nameColumn" prefWidth="250"/>
+            <TableColumn text="Book Price" fx:id="priceColumn" prefWidth="150"/>
+        </columns>
+    </TableView>
+            
+   
+            <HBox spacing="10" alignment="CENTER">
+                <TextField fx:id="nameField" promptText="Book Name"/>
+                <TextField fx:id="priceField" promptText="Book Price"/>
+                <Button text="Add" onAction="#handleAdd"/>
+            </HBox>
+      
+
+
+  
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Delete" onAction="#handleDelete"/>
+        <Button text="Back" onAction="#handleBack"/>
+    </HBox>
+
+</VBox>

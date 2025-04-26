@@ -1,0 +1,2 @@
+user,pass,540,Silver
+silver,silver,75,Silver

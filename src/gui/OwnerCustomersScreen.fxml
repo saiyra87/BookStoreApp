@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="gui.OwnerCustomersController">
+
+    <TableView fx:id="customerTable" prefHeight="250" prefWidth="400">
+        <columns>
+            <TableColumn text="Username" fx:id="usernameColumn" prefWidth="150"/>
+            <TableColumn text="Password" fx:id="passwordColumn" prefWidth="150"/>
+            <TableColumn text="Points" fx:id="pointsColumn" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="usernameField" promptText="Username" prefWidth="150"/>
+        <TextField fx:id="passwordField" promptText="Password" prefWidth="150"/>
+        <Button text="Add" onAction="#handleAdd"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Delete" onAction="#handleDelete"/>
+        <Button text="Back" onAction="#handleBack"/>
+    </HBox>
+</VBox>
